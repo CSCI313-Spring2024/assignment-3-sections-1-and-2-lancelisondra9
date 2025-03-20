@@ -14,6 +14,7 @@ export class DetailsComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
   housingService = inject(HousingService);
   housingLocation: HousingLocation | undefined;
+  
   constructor() {
     const housingLocationId = Number(this.route.snapshot.params['id']);
     this.housingLocation =
